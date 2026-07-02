@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="weather-app.css" />
+</head>
+<body>
+  <main class="app-shell bg-sunny">
+    <section class="glass-card">
+      <header>
+        <div class="brand">
+          <div>
+            <h1>Weather Pulse</h1>
+            <p>Premium weather experience with live updates and forecast.</p>
+          </div>
+        </div>
+
+        <div class="search-panel">
+          <div class="search-row">
+            <input id="cityInput" type="text" placeholder="Search city, e.g. Tokyo" aria-label="City name" />
+            <button id="searchBtn" type="button">Search</button>
+          </div>
+          <div class="search-row">
+            <button id="geoBtn" class="geo-button" type="button">Use My Location</button>
+            <div class="toggle-unit">
+              <span>Units:</span>
+              <button id="celsiusBtn" class="active" type="button">Celsius</button>
+              <button id="fahrenheitBtn" type="button">Fahrenheit</button>
+            </div>
+          </div>
+          <div class="status-row">
+            <span id="locationLabel">Waiting for location or search...</span>
+            <span id="conditionLabel">Enter a city to get started.</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="weather-card">
+        <div class="spinner" id="loadingSpinner"></div>
+        <div class="message" id="messageBox"></div>
+
+        <div class="current-weather" id="currentWeatherSection">
+          <div class="current-text">
+            <h2 id="cityName">—</h2>
+            <div class="temperature-badge">
+              <span id="temperatureValue">--</span>
+              <span id="temperatureUnit">°C</span>
+            </div>
+            <p id="weatherDescription">Search or allow location to see current weather.</p>
+          </div>
+
+          <div class="weather-icon">
+            <img id="weatherIcon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon" />
+            <h3 id="weatherMain">Clear</h3>
+          </div>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-card">
+            <strong id="humidityValue">--%</strong>
+            <span>Humidity</span>
+          </div>
+          <div class="detail-card">
+            <strong id="windSpeedValue">-- km/h</strong>
+            <span>Wind speed</span>
+          </div>
+          <div class="detail-card">
+            <strong id="feelsLikeValue">--</strong>
+            <span>Feels like</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card">
+      <div>
+        <h2 class="forecast-title">5-Day Forecast</h2>
+        <div class="forecast-grid" id="forecastGrid">
+          <div class="forecast-item"><span>Day</span><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" /><strong>--°</strong></div>
+          <div class="forecast-item"><span>Day</span><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" /><strong>--°</strong></div>
+          <div class="forecast-item"><span>Day</span><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" /><strong>--°</strong></div>
+          <div class="forecast-item"><span>Day</span><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" /><strong>--°</strong></div>
+          <div class="forecast-item"><span>Day</span><img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" /><strong>--°</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="weather-app.js"></script>
+</body>
+</html>
