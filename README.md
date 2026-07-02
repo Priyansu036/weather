@@ -2,11 +2,11 @@
 
 **Company Name:** CODTECH IT Solutions  
 
-**Intern Name:** PRIYANSU PRADHAN 
+**Intern Name:** MUKESH KUMAR 
 
-**Intern ID:** CTIS9331
+**Intern ID:** CTIS9298
 
-**Domain:** Full Stack Web Development  
+**Domain:** Web Development  
 
 **Batch Duration:** 8 WEEK 
 
@@ -87,4 +87,16 @@ weather-app/
 ├── weather-app.js        # API calls and DOM logic
 └── README.md             # Project documentation
 
+
+📸 Output
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bda7d6f4-4ae3-4f25-96fa-8572ebb84393" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6dc8fc27-4dd6-4973-aff6-2cc15031c1bd" />
+
+
+📚 API Reference
+
+EndpointUsage/data/2.5/weatherCurrent weather by city or coordinates/data/2.5/forecast5-day forecast (3-hour intervals)
+
+Base URL: https://api.openweathermap.org
 
